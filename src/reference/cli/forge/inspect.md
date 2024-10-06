@@ -13,9 +13,9 @@ Arguments:
   <FIELD>
           The contract artifact field to inspect
           
-          [possible values: abi, bytecode, deployedBytecode, assembly, assemblyOptimized,
-          methodIdentifiers, gasEstimates, storageLayout, devdoc, ir, irOptimized, metadata,
-          userdoc, ewasm, errors, events, eof, eof-init]
+          [possible values: abi, bytecode, deployedBytecode, assembly, legacyAssembly,
+          assemblyOptimized, methodIdentifiers, gasEstimates, storageLayout, devdoc, ir,
+          irOptimized, metadata, userdoc, ewasm, errors, events, eof, eof-init]
 
 Options:
       --pretty
@@ -31,6 +31,13 @@ Cache options:
 Build options:
       --no-cache
           Disable the cache
+
+      --eof
+          Use EOF-enabled solc binary. Enables via-ir and sets EVM version to Prague. Requires
+          Docker to be installed.
+          
+          Note that this is a temporary solution until the EOF support is merged into the main solc
+          release.
 
       --skip <SKIP>...
           Skip building files whose names contain the given filter.

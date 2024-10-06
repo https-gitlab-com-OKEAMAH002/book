@@ -49,6 +49,13 @@ Build options:
       --no-cache
           Disable the cache
 
+      --eof
+          Use EOF-enabled solc binary. Enables via-ir and sets EVM version to Prague. Requires
+          Docker to be installed.
+          
+          Note that this is a temporary solution until the EOF support is merged into the main solc
+          release.
+
       --skip <SKIP>...
           Skip building files whose names contain the given filter.
           
@@ -291,7 +298,7 @@ Wallet options - raw:
           [default: 5]
 
       --delay <DELAY>
-          Optional delay to apply inbetween verification attempts, in seconds
+          Optional delay to apply in between verification attempts, in seconds
           
           [default: 5]
 
