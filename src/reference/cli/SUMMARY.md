@@ -163,4 +163,5 @@
   - [`chisel load`](./chisel/load.md)
   - [`chisel view`](./chisel/view.md)
   - [`chisel clear-cache`](./chisel/clear-cache.md)
+  - [`chisel eval`](./chisel/eval.md)
 
