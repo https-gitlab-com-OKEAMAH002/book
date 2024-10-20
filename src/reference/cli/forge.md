@@ -14,6 +14,7 @@ Commands:
   cache              Manage the Foundry cache
   clean              Remove the build artifacts and cache directories [aliases: cl]
   clone              Clone a contract from Etherscan
+  compiler           Compiler utilities
   completions        Generate shell completions script [aliases: com]
   config             Display the current config [aliases: co]
   coverage           Generate coverage reports
