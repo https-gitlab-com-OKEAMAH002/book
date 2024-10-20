@@ -15,7 +15,11 @@ Build options:
           Print compiled contract names
 
       --sizes
-          Print compiled contract sizes
+          Print compiled contract sizes. Constructor argument length is not included in the
+          calculation of initcode size
+
+      --ignore-eip-3860
+          Ignore initcode contract bytecode size limit introduced by EIP-3860
 
       --no-cache
           Disable the cache
